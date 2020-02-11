@@ -1,4 +1,4 @@
-// random words will be generated
+// fast typing test, epikly made by myself
 
 let test = {
     words: [
@@ -44,8 +44,10 @@ let test = {
         'raspberry',
     ],
 
+    generatedWords: [],
+
     generateWord() {
-        // generate a new word to the array of words
+        this.generatedWords.push(this.words[Math.floor(Math.random() * this.words.length)])
     },
 
     analyzeKeyPress() {
